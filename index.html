@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Hackathon 2.0</title>
+    <link rel="stylesheet" href="Trivia.css">
+</head>
+<body>
+    <div class="container">
+        <div id="setup" class="setup">
+            <div class="setup-leftside">
+                <h1>Welcome to Trivia Game</h1>
+                <img src="title image.png">
+            </div>
+            
+            <div class="setup-rightside">
+              <form id="player-setup">
+                  <h3>Give Your Names</h3>
+                  <input type="text" id="player1" placeholder=" Enter Player 1 Name" />
+                  <input type="text" id="player2" placeholder=" Enter Player 2 Name"  />
+                  <button type="submit">Start Game</button>
+              </form>
+            </div>
+            
+        </div>
+    
+        <div id="category-section" class="hidden">
+            <h2>Select a Category</h2>
+            <div id="categories"></div>
+        </div>
+    
+        <div id="question-section" class="hidden">
+            <h2 id="current-player"></h2>
+            <p id="question"></p>
+            <div id="answers"></div>
+        </div>
+    
+        <div id="end-section" class="hidden">
+            <h2>Game Over!</h2>
+            <p id="final-scores"></p>
+            <p id ="winner"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="Trivia.js"></script>
+    
+    
+</body>
+</html>
